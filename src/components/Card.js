@@ -29,7 +29,7 @@ export default function RecipeReviewCard() {
 
   return (
     <Grid container justifyContent="center" alignItems="center">
-      <Card sx={{ maxWidth: 900, paddingBottom: 2 }}>
+      <Card sx={{ maxWidth: 900, paddingBottom: 4 }}>
         <CardHeader
           title="Currency Converter"
           subheader="React Group Learn Project"
