@@ -1,5 +1,4 @@
 import * as React from "react";
-
 import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import CardContent from "@mui/material/CardContent";
@@ -23,6 +22,10 @@ export default function RecipeReviewCard() {
     to: "",
     result: "",
   });
+
+  const handleSwap = (prop) => (event) => {
+    // Function to swap values
+  };
 
   const handleChange = (prop) => (event) => {
     setValues({ ...values, [prop]: event.target.value });
@@ -65,7 +68,11 @@ export default function RecipeReviewCard() {
               <MenuItem value="EUR">EUR - Euro</MenuItem>
             </Select>
           </FormControl>
-          <IconButton size="large" sx={{ marginTop: 1 }}>
+          <IconButton
+            size="large"
+            sx={{ marginTop: 1 }}
+            onClick={() => handleSwap()}
+          >
             <SwapHorizIcon fontSize="inherit" />
           </IconButton>
           <FormControl sx={{ m: 1 }}>
